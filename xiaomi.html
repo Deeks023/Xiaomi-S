@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xiaomi POS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="D:\Web Development\My Sites\Tindog\css\xiaomi\xiaomi.css" />
+
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="sidemenu">
+
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name" href="D:\Web Development\My Sites\Tindog\xiaomi.html">Xiaomi</span>
+        <a class="mobiles-nav" href="D:\Web Development\My Sites\Xiaomi\Mobiles.html">Mobiles</a>
+        <a class="tv-nav" href="#">TV</a>
+        <a class="laptops-nav" href="#">Laptops</a>
+        <a class="tablets-nav" href="#">Tablets</a>
+        <a class="fitness-nav" href="#">Fitness</a>
+        <a class="login-nav" href="#">Login</a>
+        <img class="user-logo-nav" src="D:\Web Development\My Sites\Xiaomi\user.png" href="D:\Web Development\My Sites\Tindog\Xiaomi\Mobiles.html" alt="user-logo-nav">                   <!-- Deekshith  -->
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Xiaomi</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="D:\Web Development\My Sites\Tindog\Xiaomi\xiaomi.html" class="nav-link">
+                <span class="link">Dashboard</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#products" class="nav-link">
+                <span class="link">Products</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#offers" class="nav-link">
+                <span class="link">Offers</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="D:\Web Development\My Sites\Xiaomi\invoice.html" class="nav-link">
+                <span class="link">Billing</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#delivery" class="nav-link">
+                <span class="link">Delivery</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#customers" class="nav-link">
+                <span class="link">Customers</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#reports" class="nav-link">
+                <span class="link">Reports</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#settings" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#logout" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </section>
+      </div>
+      <section id="sidemenu" class="list" data-id="reports">
+                <!-- Feature Item -->
+                <div class="feature-item">
+                    <h5 class="title">Sales</h5>
+                </div>
+                <!-- Feature Item -->
+                <div class="feature-item">
+                    <h5 class="title">Invoices</h5>
+                </div>
+              </div>
+
+                 <!-- Feature Item -->
+                <div class="feature-item">
+                    <h5 class="title">Salesperson</h5>
+                </div>
+            </div>
+          </section>
+        </div>
+    </nav>
+
+
+
+    <section class="overlay"></section>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+
+    <!--Deekshith -->
+
+  </body>
+
+
+</html>
